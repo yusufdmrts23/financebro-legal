@@ -35,7 +35,7 @@
 <tr><td>Your content</td><td>The messages you send to the coach.</td></tr>
 <tr><td>Device &amp; usage</td><td>A device push token (only if you enable notifications), product-analytics events, an analytics identifier, approximate location inferred from IP address, device model, and operating-system version.</td></tr>
 <tr><td>Diagnostics</td><td>Crash reports and performance data.</td></tr>
-<tr><td>Device check</td><td>A device-bound <strong>public</strong> key created by Apple's App Attest, sent with coach messages so we can tell a genuine copy of the App from an automated one. The matching private key never leaves your device, and Apple gives every app a different key, so it cannot be used to recognise you in any other app.</td></tr>
+<tr><td>Device check</td><td>A device-bound <strong>public</strong> key created by Apple's App Attest. When this check is switched on, it is sent with coach messages so we can tell a genuine copy of the App from an automated one; your device sends nothing while it is switched off. The matching private key never leaves your device, and Apple gives every app a different key, so it cannot be used to recognise you in any other app.</td></tr>
 <tr><td>Subscription</td><td>Your subscription status and plan. We do <strong>not</strong> receive or store your card or bank details — Apple processes all payments.</td></tr>
 </table>
 <p>We do <strong>not</strong> collect your income, financial-account balances, card numbers, contacts, photos, or precise GPS location.</p>
@@ -111,7 +111,7 @@
 <tr><td>Geolocation</td><td>Approximate only, inferred from IP address</td><td>Your device</td><td>Analytics and diagnosing crashes</td><td>PostHog, Sentry</td></tr>
 <tr><td>Professional information (occupation)</td><td>Yes</td><td>You</td><td>Choose relevant examples</td><td>Supabase, Anthropic</td></tr>
 <tr><td>Inferences (your investor archetype)</td><td>Yes</td><td>Derived from your answers</td><td>Frame lessons for you</td><td>Supabase, Anthropic</td></tr>
-<tr><td>Device check (App Attest public key)</td><td>Yes</td><td>Your device</td><td>Tell a genuine copy of the App from an automated one</td><td>Supabase</td></tr>
+<tr><td>Device check (App Attest public key)</td><td>Yes, while the check is switched on</td><td>Your device</td><td>Tell a genuine copy of the App from an automated one</td><td>Supabase</td></tr>
 <tr><td>Biometric information</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
 <tr><td>Precise geolocation</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
 <tr><td>Government identifiers (Social Security number, passport, driver's licence)</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
