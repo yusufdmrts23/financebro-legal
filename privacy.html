@@ -18,7 +18,10 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="meta">Financebro AI · Effective date: July 6, 2026 · Last updated: September 1, 2026</p>
+<!-- BEFORE MERGING: set "Last updated" to the day 2.6 is actually submitted for review.
+     This page goes live the moment this branch merges (GitHub Pages serves main), and the
+     policy must not describe software users cannot yet have. See ADS.md §4. -->
+<p class="meta">Financebro AI · Effective date: July 6, 2026 · Last updated: September 9, 2026</p>
 
 <p class="lead">This Privacy Policy describes how <strong>Yusuf Demirtas</strong>, trading as <strong>Financebro Studio</strong> ("Financebro", "we", "us", "our"), collects, uses, and protects your information when you use the Financebro AI mobile application (the "App"). Financebro AI is a financial <strong>education and coaching</strong> service. It is not a brokerage, not a licensed financial advisor, and does not provide financial advice.</p>
 
@@ -35,7 +38,7 @@
 <tr><td>Your content</td><td>The messages you send to the coach.</td></tr>
 <tr><td>Device &amp; usage</td><td>A device push token (only if you enable notifications), product-analytics events, an analytics identifier, approximate location inferred from IP address, device model, and operating-system version.</td></tr>
 <tr><td>Diagnostics</td><td>Crash reports and performance data.</td></tr>
-<tr><td>Device check</td><td>A device-bound <strong>public</strong> key created by Apple's App Attest. When this check is switched on, it is sent with coach messages so we can tell a genuine copy of the App from an automated one; your device sends nothing while it is switched off. The matching private key never leaves your device, and Apple gives every app a different key, so it cannot be used to recognise you in any other app.</td></tr>
+<tr><td>Advertising measurement</td><td>While <strong>Advertising measurement</strong> is switched on in Settings: the fact that the App was installed, that it was opened, and that a subscription was purchased. These go to Meta so we can tell whether an advertisement worked. They carry your IP address and an identifier Meta's software creates for this App on your device, together with basic device and app information. They never carry your name, your profile, your goals, or your financial details.</td></tr>
 <tr><td>Subscription</td><td>Your subscription status and plan. We do <strong>not</strong> receive or store your card or bank details — Apple processes all payments.</td></tr>
 </table>
 <p>We do <strong>not</strong> collect your income, financial-account balances, card numbers, contacts, photos, or precise GPS location.</p>
@@ -47,26 +50,39 @@
   <li><strong>To send the daily brief and other notifications</strong> — your consent, which you can withdraw anytime in Settings (Art. 6(1)(a)).</li>
   <li><strong>To understand product usage and fix crashes</strong> — our legitimate interest in improving and securing the App (Art. 6(1)(f)).</li>
   <li><strong>To comply with legal obligations</strong> where applicable (Art. 6(1)(c)).</li>
+  <li><strong>To measure whether our advertising works</strong> — your <strong>consent</strong>, which you give by leaving <strong>Advertising measurement</strong> switched on in Settings and withdraw at any time by switching it off (Art. 6(1)(a)).</li>
 </ul>
 <p>For users in Brazil, the LGPD (Art. 7) provides equivalent legal bases for these activities, including performance of a contract, consent, legitimate interests, and compliance with a legal obligation.</p>
-<p>We do not sell your personal information, and we do not use it for cross-app advertising or to track you across other companies' apps or websites.</p>
+<p>We do not sell your personal information, and we do not track you across other companies' apps or websites — we never ask for the permission that would allow it, so we are never given the identifier that would make it possible. We do send a small set of events to Meta so we can measure whether our own advertisements worked; section 4 says exactly what those are, and you can switch them off in <strong>Settings &rarr; Advertising measurement</strong>.</p>
 
-<h2>4. Service providers (sub-processors)</h2>
+<h2>4. Who else handles your information</h2>
+<h3>Service providers (processors acting on our instructions)</h3>
 <table>
 <tr><th>Provider</th><th>Purpose</th><th>Region</th></tr>
 <tr><td>Supabase</td><td>Authentication &amp; database</td><td>EU (Frankfurt)</td></tr>
-<tr><td>Anthropic</td><td>AI processing of your chat messages and profile details (age, goals, risk tolerance, investable amount). Under Anthropic's commercial API terms, the messages and profile details we send are <strong>not</strong> used to train Anthropic's or any other party's AI models.</td><td>US</td></tr>
+<tr><td>Anthropic</td><td>AI processing of the questions you type and your recent conversation, together with profile details — your first name, age, country and currency, occupation, experience level, risk tolerance, primary goal, time horizon, the amount you can invest per month, your investor archetype, and your language preference. Under Anthropic's commercial API terms, the messages and profile details we send are <strong>not</strong> used to train Anthropic's or any other party's AI models.</td><td>US</td></tr>
 <tr><td>RevenueCat</td><td>Subscription management</td><td>US</td></tr>
 <tr><td>PostHog</td><td>Product analytics</td><td>US</td></tr>
 <tr><td>Sentry</td><td>Crash &amp; performance diagnostics</td><td>US</td></tr>
 <tr><td>Apple</td><td>Sign-in, push notifications, payment</td><td>Global</td></tr>
 </table>
 
+<h3>Independent recipients (not our processors)</h3>
+<p>The recipient below does not act only on our instructions. It decides some of its own purposes for the data it receives, under its own terms, so we name it separately rather than calling it a service provider.</p>
+<table>
+<tr><th>Recipient</th><th>Purpose</th><th>Region</th></tr>
+<tr><td>Meta Platforms, Inc.</td><td>Advertising measurement — app install, app open, and in-app purchase events, sent only while <strong>Advertising measurement</strong> is switched on in Settings. Meta may also use these events for its own purposes under its Business Tools Terms. No profile, goal, or financial details are ever included.</td><td>US</td></tr>
+</table>
+
+<h3>Measuring our ads</h3>
+<p>If you found Financebro through an advertisement on Instagram or Facebook, we use Meta's measurement tools to understand whether that advertisement worked — whether it led to an install, and whether that install led to a subscription. We do <strong>not</strong> ask for permission to track you across other companies' apps and websites, and because we never ask, Apple never gives Meta the advertising identifier that would let it build a cross-app profile of you. We do not sell your information. Your financial details — the amount you told us you can invest, your goals, your risk tolerance — are <strong>never</strong> included in anything sent to Meta. If you would rather we did not measure this at all, switch <strong>Advertising measurement</strong> off in <strong>Profile &rarr; Settings</strong>; nothing further is sent from that moment.</p>
+
 <h2>5. International data transfers</h2>
-<p>Your account and content are stored in the <strong>EU (Frankfurt)</strong>. Some processors (analytics, crash reporting, AI) operate in the <strong>United States</strong>, so your data may be transferred there. Where required, such transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses; for transfers of data out of Brazil, we rely on the international-transfer bases permitted under the LGPD (Art. 33). By using the App you understand your data may be processed outside your country.</p>
+<p>Your account and content are stored in the <strong>EU (Frankfurt)</strong>. Some recipients — analytics, crash reporting, AI processing, and advertising measurement — operate in the <strong>United States</strong>, so your data may be transferred there. Where required, such transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses; for transfers of data out of Brazil, we rely on the international-transfer bases permitted under the LGPD (Art. 33). By using the App you understand your data may be processed outside your country.</p>
 
 <h2>6. Data retention</h2>
 <p>We keep your data while your account is active. When you delete your account, your data is removed promptly from our live systems; residual copies in encrypted backups are purged within 30 days on a rolling schedule. Aggregated, non-identifying analytics may be retained.</p>
+<p>One limit worth stating plainly: events already sent to a third party before you deleted your account or switched a setting off — to Meta for advertising measurement, or to our analytics and crash-reporting providers — are held under that provider's own retention rules and we cannot recall them. Deleting your account stops anything further being sent.</p>
 
 <h2>7. Your rights</h2>
 <p>Under GDPR, KVKK, Brazil's LGPD (Lei nº 13.709/2018), and the CCPA (as applicable), you have the right to access, correct, delete, port, restrict, or object to the processing of your personal data, and to withdraw consent. You can exercise the two most common rights directly in the App:</p>
@@ -78,7 +94,9 @@
 <p>For any other request, email <a href="mailto:financebrostudio@gmail.com">financebrostudio@gmail.com</a>. You also have the right to lodge a complaint with your local data-protection authority (in Türkiye, the Kişisel Verileri Koruma Kurumu; in the EU, your national supervisory authority; in Brazil, the Autoridade Nacional de Proteção de Dados (ANPD)).</p>
 
 <h2>8. Analytics &amp; identifiers</h2>
-<p>We use first-party analytics (PostHog) and crash reporting (Sentry) that rely on device and usage identifiers to measure how the App is used and to fix problems. These are used for our own product purposes only — not for advertising. We do not use Apple's advertising identifier (IDFA) and do not present an App Tracking Transparency prompt.</p>
+<p>We use first-party analytics (PostHog) and crash reporting (Sentry) that rely on device and usage identifiers to measure how the App is used and to fix problems. Those two are used for our own product purposes only — never for advertising.</p>
+<p>Separately, Meta's measurement software sends install, app-open, and purchase events so we can tell whether our advertisements worked, while <strong>Advertising measurement</strong> is switched on in Settings. It creates its own identifier for this App on your device. It is <strong>not</strong> given Apple's advertising identifier (IDFA): we do not present an App Tracking Transparency prompt, and we switch off the identifier collection in Meta's software as well, so there are two independent reasons it never leaves your device. Without that identifier, Meta cannot join what it sees here to what you do in other companies' apps.</p>
+<p>Note that Apple's App Store privacy label for this App nonetheless declares <em>tracking</em>. Apple counts embedding advertising software of this kind as tracking even when it is not used for that purpose, so the label is stricter than our actual behaviour rather than a description of it.</p>
 
 <h2>9. Security</h2>
 <p>We use industry-standard measures including encryption in transit (HTTPS), encrypted storage of your authentication session in the device Keychain, and row-level access controls so each user can only access their own data.</p>
@@ -87,32 +105,35 @@
 <p>The App is intended for users aged 16 and older and is not directed to children or to anyone under 16. We do not knowingly collect personal data from anyone under 16. If you believe someone under 16 has provided us data, contact us and we will delete it.</p>
 
 <h2>11. When we may disclose your information</h2>
-<p>We may disclose information where we believe in good faith that it is necessary to comply with a valid legal obligation — a court order, subpoena, or lawful request from a public authority — or to establish, exercise or defend legal claims, or to protect the safety of a person. We will not disclose your information for any other reason. <strong>We do not sell your personal information</strong>, and we do not share it for cross-context behavioural advertising.</p>
+<p>We may disclose information where we believe in good faith that it is necessary to comply with a valid legal obligation — a court order, subpoena, or lawful request from a public authority — or to establish, exercise or defend legal claims, or to protect the safety of a person. Apart from the recipients named in section 4, we will not disclose your information for any other reason. <strong>We do not sell your personal information.</strong> We do disclose app install, app-open, and purchase events to Meta for advertising measurement — section 4 explains exactly what that is, and section 14 explains how to switch it off.</p>
 
 <h2>12. If our business changes hands</h2>
 <p>Financebro Studio is currently operated by an individual. If it is incorporated as a company, reorganised, merged, or its assets are transferred to another business, your information may transfer with it so that the App can keep running and your account is not interrupted. Anyone receiving your information stays bound by this Policy until we tell you otherwise, and <strong>we will notify you in the App if the person or company responsible for your data changes</strong>.</p>
 
 <h2>13. Do Not Track</h2>
-<p>We do not track you across other apps or websites, so a "Do Not Track" signal has nothing to switch off. The App contains no advertising SDKs, requests no advertising identifier, and shares nothing for advertising purposes. Our behaviour is the same whether or not such a signal is sent.</p>
+<p>We do not track you across other companies' apps or websites, so a "Do Not Track" signal has nothing to switch off, and our behaviour is the same whether or not one is sent. A "Do Not Track" signal is in any case a browser signal, and the App is not a browser — there is no way for it to receive one.</p>
+<p>The App does contain one advertising-related component: Meta's measurement software, described in sections 4 and 8. It does not request Apple's advertising identifier. The switch that actually controls it is in the App itself — <strong>Profile &rarr; Settings &rarr; Advertising measurement</strong>.</p>
 
 <h2>14. California privacy rights</h2>
-<p><strong>Your rights under the CCPA/CPRA.</strong> If you live in California you have the right to <strong>know</strong> what personal information we have collected about you and how we have used and disclosed it, the right to <strong>delete</strong> it, the right to <strong>correct</strong> inaccurate information, and the right to <strong>opt out</strong> of any sale or sharing for cross-context behavioural advertising — though as set out below, we do neither.</p>
-<p><strong>How to make a request.</strong> Deletion and export are built into the App itself: Profile &rarr; Settings &rarr; <em>Delete account</em> or <em>Export my data</em>. For anything else, or to make a request through an authorised agent, email <a href="mailto:financebrostudio@gmail.com">financebrostudio@gmail.com</a>. We will verify a request by matching it against the account details we already hold, and we will not use anything you send us for verification for any other purpose.</p>
+<p><strong>Your rights under the CCPA/CPRA.</strong> If you live in California you have the right to <strong>know</strong> what personal information we have collected about you and how we have used and disclosed it, the right to <strong>delete</strong> it, the right to <strong>correct</strong> inaccurate information, and the right to <strong>opt out</strong> of any sale or sharing for cross-context behavioural advertising. We do not sell personal information. We do disclose a small set of advertising-measurement events to Meta, and rather than argue about whether that meets the statutory definition of &ldquo;sharing&rdquo;, we treat it as sharing and give you a switch — see <em>Sale and sharing</em> below.</p>
+<p><strong>How to make a request.</strong> Deletion and export are built into the App itself: Profile &rarr; Settings &rarr; <em>Delete account</em> or <em>Export my data</em>. To opt out of sharing for advertising measurement, use Profile &rarr; Settings &rarr; <em>Advertising measurement</em> — no request or email is needed, and it takes effect immediately. For anything else, or to make a request through an authorised agent, email <a href="mailto:financebrostudio@gmail.com">financebrostudio@gmail.com</a>. We will verify a request by matching it against the account details we already hold, and we will not use anything you send us for verification for any other purpose.</p>
 <p><strong>No discrimination.</strong> We will not deny you the App, charge you a different price, or give you a lower level of service because you exercised any of these rights.</p>
 <p><strong>"Shine the Light" (Cal. Civ. Code § 1798.83).</strong> We do not share personal information with third parties for those third parties' own direct-marketing purposes, and never have.</p>
-<p><strong>Categories of personal information (CCPA/CPRA).</strong> In the past twelve months we have collected the categories below. We have <strong>not sold</strong> personal information and have not shared it for cross-context behavioural advertising, so no opt-out is offered — there is nothing to opt out of.</p>
+<p><strong>Sale and sharing.</strong> We have <strong>never sold</strong> personal information, for money or otherwise. Since version 2.6 the App discloses app install, app-open, and in-app purchase events to Meta so we can measure whether our own advertisements worked. Meta may use those events for its own purposes under its Business Tools Terms, which is why we treat this as <strong>sharing</strong> and offer an opt-out even though we do not build advertising profiles and Meta is not given the identifier that would let it recognise you elsewhere. Two things limit it: we apply Meta's <strong>Limited Data Use</strong> setting, which restricts how Meta may use data from users in California; and you can stop it entirely at <strong>Profile &rarr; Settings &rarr; Advertising measurement</strong>. Nothing is sent to Meta once that is off.</p>
+<p><strong>Categories of personal information (CCPA/CPRA).</strong> In the past twelve months we have collected the categories below.</p>
 <table>
 <tr><th>Category</th><th>Collected?</th><th>Source</th><th>Why</th><th>Disclosed to</th></tr>
-<tr><td>Identifiers (Apple ID or private-relay email, account identifier, push token, IP address)</td><td>Yes</td><td>You; your device</td><td>Run your account, send notifications you asked for</td><td>Supabase, Apple, PostHog, Sentry</td></tr>
-<tr><td>Personal information under Cal. Civ. Code § 1798.80 (first name)</td><td>Yes</td><td>You</td><td>Address you by name</td><td>Supabase</td></tr>
+<tr><td>Identifiers (Apple ID or private-relay email, account identifier, push token, IP address)</td><td>Yes</td><td>You; your device</td><td>Run your account, send notifications you asked for, measure whether our advertisements worked</td><td>Supabase, Apple, PostHog, Sentry, Meta</td></tr>
+<tr><td>Personal information under Cal. Civ. Code § 1798.80 (first name)</td><td>Yes</td><td>You</td><td>Address you by name; let the coach address you by name</td><td>Supabase, Anthropic</td></tr>
 <tr><td>Protected classifications (age)</td><td>Yes</td><td>You</td><td>Enforce the minimum age of 16; choose relevant examples</td><td>Supabase, Anthropic</td></tr>
-<tr><td>Commercial information (subscription status and plan)</td><td>Yes</td><td>Apple / RevenueCat</td><td>Know what you are entitled to</td><td>RevenueCat, Supabase</td></tr>
+<tr><td>Commercial information (subscription status and plan)</td><td>Yes</td><td>Apple / RevenueCat</td><td>Know what you are entitled to; measure whether an advertisement led to a subscription</td><td>RevenueCat, Supabase, Meta</td></tr>
 <tr><td>Financial information (the amount you can invest per month)</td><td>Yes</td><td>You</td><td>Keep examples proportionate to your situation</td><td>Supabase, Anthropic</td></tr>
-<tr><td>Internet or network activity (in-App events)</td><td>Yes</td><td>Your use of the App</td><td>Understand which features help</td><td>PostHog</td></tr>
+<tr><td>Internet or network activity (in-App feature events)</td><td>Yes</td><td>Your use of the App</td><td>Understand which features help</td><td>PostHog</td></tr>
+<tr><td>Internet or network activity (app install and app open)</td><td>Yes, while Advertising measurement is on</td><td>Your use of the App</td><td>Measure whether an advertisement led to an install</td><td>Meta</td></tr>
 <tr><td>Geolocation</td><td>Approximate only, inferred from IP address</td><td>Your device</td><td>Analytics and diagnosing crashes</td><td>PostHog, Sentry</td></tr>
 <tr><td>Professional information (occupation)</td><td>Yes</td><td>You</td><td>Choose relevant examples</td><td>Supabase, Anthropic</td></tr>
+<tr><td>Other information you give us (country, currency, experience level, risk tolerance, primary goal, time horizon, language)</td><td>Yes</td><td>You</td><td>Keep coaching and examples relevant to where you live and what you are trying to do</td><td>Supabase, Anthropic</td></tr>
 <tr><td>Inferences (your investor archetype)</td><td>Yes</td><td>Derived from your answers</td><td>Frame lessons for you</td><td>Supabase, Anthropic</td></tr>
-<tr><td>Device check (App Attest public key)</td><td>Yes, while the check is switched on</td><td>Your device</td><td>Tell a genuine copy of the App from an automated one</td><td>Supabase</td></tr>
 <tr><td>Biometric information</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
 <tr><td>Precise geolocation</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
 <tr><td>Government identifiers (Social Security number, passport, driver's licence)</td><td>No</td><td>—</td><td>—</td><td>—</td></tr>
