@@ -18,7 +18,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="meta">Financebro AI · Effective date: July 6, 2026 · Last updated: September 14, 2026</p>
+<p class="meta">Financebro AI · Effective date: July 6, 2026 · Last updated: September 17, 2026</p>
 
 <p class="lead"><strong>A note on version 2.6.</strong> This Policy is published ahead of the
 release of version 2.6 of the App so that you can read it before you update. Everything below
@@ -67,7 +67,7 @@ sends nothing to Meta at all.</p>
 <tr><td>RevenueCat</td><td>Subscription management</td><td>US</td></tr>
 <tr><td>PostHog</td><td>Product analytics</td><td>US</td></tr>
 <tr><td>Sentry</td><td>Crash &amp; performance diagnostics</td><td>US</td></tr>
-<tr><td>Apple</td><td>Sign-in, push notifications, payment</td><td>Global</td></tr>
+<tr><td>Apple</td><td>Sign-in, push notifications, payment, and Apple Search Ads attribution (via RevenueCat, see §8)</td><td>Global</td></tr>
 </table>
 
 <h3>Independent recipients (not our processors) <em>&mdash; version 2.6 and later</em></h3>
@@ -107,7 +107,9 @@ those regions.</p>
 <h2>8. Analytics &amp; identifiers</h2>
 <p>We use first-party analytics (PostHog) and crash reporting (Sentry) that rely on device and usage identifiers to measure how the App is used and to fix problems. Those two are used for our own product purposes only — never for advertising.</p>
 <p>Separately, from version 2.6, Meta's measurement software sends install, app-open and purchase events, together with three one-time milestones (profile set-up finished, first coach question, first lesson finished), so we can tell whether our advertisements worked, while <strong>Advertising measurement</strong> is switched on in Settings. It creates its own identifier for this App on your device. It is <strong>not</strong> given Apple's advertising identifier (IDFA): we do not present an App Tracking Transparency prompt, and we switch off the identifier collection in Meta's software as well, so there are two independent reasons it never leaves your device. Without that identifier, Meta cannot join what it sees here to what you do in other companies' apps.</p>
-<p>Note that Apple's App Store privacy label for this App nonetheless declares <em>tracking</em>. Apple counts embedding advertising software of this kind as tracking even when it is not used for that purpose, so the label is stricter than our actual behaviour rather than a description of it.</p>
+<p>Apple's App Store privacy label for this App accordingly declares <strong>no tracking</strong>. Apple defines tracking as linking what an app collects about you with data from other companies' apps and websites; because Meta's software here has no advertising identifier and receives only the aggregated events described above, nothing is linked. The label does list the data those events contain &mdash; a device identifier, product interaction and purchase history &mdash; under the purpose <em>Third-Party Advertising</em>, which is what they are used for.</p>
+
+<p><strong>Apple Search Ads.</strong> If you found Financebro through an advertisement in the App Store itself, Apple's own attribution service (AdServices) can tell us so. Our subscription provider, RevenueCat, requests a one-time attribution token from Apple on your device and uses it to learn which Apple Search Ads campaign, if any, led to the install and later to a subscription. This is Apple's privacy-preserving channel: it involves no advertising identifier, no App Tracking Transparency prompt, and reports at the campaign level, not about you individually. It runs in every region, because it does not place anything on your device or share data with anyone other than Apple, which already has it.</p>
 
 <h2>9. Security</h2>
 <p>We use industry-standard measures including encryption in transit (HTTPS), encrypted storage of your authentication session in the device Keychain, and row-level access controls so each user can only access their own data.</p>
