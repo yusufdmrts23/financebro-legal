@@ -102,8 +102,10 @@ Meta's software starts the first time you open the App, so the install and first
 sent before you can change any setting, and the &ldquo;finished setting up your profile&rdquo;
 milestone &mdash; and a purchase, if you subscribe on the first offer screen &mdash; is sent before
 the Settings screen is available. In version 2.6 the App does not mention Meta before that point;
-from version 2.7, Apple's tracking prompt, shown on the last set-up question, does, unless your
-iPhone does not let apps ask (see below). The
+from version 2.7, Apple's tracking prompt does, unless your iPhone does not let apps ask (see
+below). From version 2.9 the prompt comes right after you tap <strong>Get Started</strong> on the
+first screen, before the first set-up question; in versions 2.7 and 2.8 it came on the last set-up
+question. The
 offer screen links to this Policy. Once the Settings screen is available, you can switch it off at
 any time.</p>
 <p><strong>How to switch it off.</strong> Go to <strong>Profile &rarr; Settings</strong> (the gear
@@ -138,9 +140,15 @@ never shows it.</p>
   Not to Track</strong>. Under Apple's question, our own sentence says why we ask: to see which of
   our Instagram and Facebook ads bring people to Financebro, so we spend less on ads that don't
   work; and that your profile, goals and financial details are never sent to Meta.</li>
-  <li><strong>When it appears.</strong> On a new installation, when you tap Continue on the last
-  set-up question, &ldquo;Where do you want to start?&rdquo;, before your plan is made. By then the
-  install and first-open events have normally already been sent, without the identifier. If you installed
+  <li><strong>When it appears.</strong> From version 2.9, on a new installation, right after you tap
+  <strong>Get Started</strong> on the first screen, before the first set-up question. If you were
+  already past that first screen when you updated to version 2.9, or your iPhone did not show the
+  prompt there, it appears the first time the main part of the App opens, never during set-up. In
+  versions 2.7 and 2.8 it appeared when you tapped Continue on the last set-up question,
+  &ldquo;Where do you want to start?&rdquo;, before your plan was made. The install event is sent the
+  moment you first open the App, so it goes without the identifier. Because the prompt now comes
+  within seconds of that first opening, the first-open event may not have been sent yet when you
+  answer: if you tap <strong>Allow</strong>, it can go out with the identifier. If you installed
   the App before version 2.7, it appears when you next open the App after updating. iOS shows it
   once per installation: after you answer, the App cannot show it again unless you delete it and
   install it again. When you answer, the App records which answer you gave, once, in our own
